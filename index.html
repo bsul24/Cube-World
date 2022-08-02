@@ -1,89 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cube World</title>
-        <link rel="stylesheet" href="CSS\style.css">
-    </head>
-    <body>
-      <div id="container1">
-        <header id="header">
-          <img id="header-img" width="100vw" src="https://images.newscientist.com/wp-content/uploads/2010/08/dn19301-1_300.jpg?width=1200&enable=upscale" alt="Rubix Cube"><span id="header-title">CUBE WORLD</span>
-          <nav id="nav-bar" class="container2">
-          <a href="#video" class="nav-link">
-            Demonstration
-          </a>
-          <a href="#features" class="nav-link">
-            Features
-          </a>
-          <a href="#grid2" class="nav-link">
-            Pricing
-          </a>
-        </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube World</title>
+    <script src="https://kit.fontawesome.com/d6e1282c39.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS\style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="./images/rubixCube.jpg"
+          alt="Rubik's Cube"
+          class="logo-image"
+        />
+        <h1>CUBE WORLD</h1>
       </div>
-      <div id="grid1">  
-      <iframe id="video" width="888" height="500" src="https://www.youtube.com/embed/SjOyaf2JKoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </iframe>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <label for="email" id="email-label">Twist and spin your way to the top!</label>
-          <br>
-          <input required type="email" id="email" class="text-field" name="email" placeholder="Enter email here">
-          <input id="submit" type="submit" value="Try now">
-        </form>
-      <div id="features">
+      <nav>
         <ul>
-          <li>Using our patented lube-tex technology, our cubes just simply spin faster!</li>
-          <li>Our colors pop 50% more than any colors you'll find on another cube. You'll never mistake a white for a yellow again!</li>
-          <li>All of our cubes come with a guaranteed lifetime warranty as part of your purchase. Go ahead and tear into that thing, if it breaks down (which it won't), it's on us!</li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#demonstration">Demonstration</a></li>
+          <li><a href="#pricing">Pricing</a></li>
         </ul>
-      </div>
-      </div>
-      <div id="grid2">
-        <div id="opt1">
-          <div class="price-grid">
-            <div class="head">
-              Good Cube
+      </nav>
+    </header>
+    <div class="main-container">
+        <section class="section-form">
+            <h2 class="form-header">Twist and spin your way to the top!</h2>
+            <form action="https://www.freecodecamp.com/email-submit">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email here"
+                required
+              />
+              <button type="submit" id="submit">Try now</button>
+            </form>
+          </section>
+          <section class="info">
+            <a class="anchor" id="features"></a>
+            <div class="info-item">
+                <i class="fa-solid fa-hammer info-logo"></i>
+              <div class="info-item-text">
+                <h2 class="info-header">World Class Materials</h2>
+                <p>Using our patented lube-tex technology, our cubes just simply spin faster!</p>
+              </div>
             </div>
-            <div class="content">
-              <br>
-              $X
-              <br>
-              <br>
-              With our first option, you'll still be the best cuber on the block. It's sleek, stylish, and sexy. An all around good option for beginners and experienced cubers alike.
+            <div class="info-item">
+                <i class="fa-solid fa-palette info-logo"></i>
+              <div class="info-item-text">
+                <h2 class="info-header">Vibrant Colors</h2>
+                <p>Our colors pop 50% more than any colors you'll find on another cube. You'll never mistake a white for a yellow again!</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div id="opt2">
-          <div class="price-grid">
-            <div class="head">
-              Great Cube
+            <div class="info-item">
+                <i class="fa-solid fa-pen-fancy info-logo"></i>
+              <div class="info-item-text">
+                <h2 class="info-header">Quality Assurance</h2>
+                <p>All of our cubes come with a guaranteed lifetime warranty as part of your purchase. Go ahead and tear into that thing, if it breaks down (which it won't), it's on us!</p>
+              </div>
             </div>
-            <div class="content">
-              <br>
-              $Y
-              <br>
-              <br>
-              If you're looking for a step up and a way to move into some seriously competitive spaces, our Great Cube is the option for you. We promise you'll never look back again once you get your hands on this.  
+          </section>
+          <section id="video" class="video">
+            <a class="anchor" id="demonstration"></a>  
+            <iframe id="video" height="315" src="https://www.youtube.com/embed/SjOyaf2JKoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </iframe>
+          </section>
+          <section id="options" class="options">
+            <a class="anchor" id="pricing"></a>
+            <div class="options-container">
+              <h3>Good Cube</h3>
+              <p class="price">$X</p>
+              <p class="options-main">With our first option, you'll still be the best cuber on the block. It's sleek, stylish, and sexy. An all around good option for beginners and experienced cubers alike.</p>
+              <button type="button" id="button">SELECT</button>
             </div>
-          </div>
-        </div>
-        <div id="opt3">
-          <div class="price-grid">
-            <div class="head">
-              Best Cube
+            <div class="options-container">
+              <h3>Great Cube</h3>
+              <p class="price">$Y</p>
+              <p class="options-main">If you're looking for a step up and a way to move into some seriously competitive spaces, our Great Cube is the option for you. We promise you'll never look back again once you get your hands on this.</p>
+              <button type="button" id="button">SELECT</button>
             </div>
-            <div class="content">
-              <br>
-              $Z
-              <br>
-              <br>
-              This cube is for the best of the best. World records have been broken with these. If this is more than just a hobby for you, a true passion, you need to work with a Best Cube. Nothing in the world can compare to one of these. 
+            <div class="options-container">
+              <h3>Best Cube</h3>
+              <p class="price">$Z</p>
+              <p class="options-main">This cube is for the best of the best. World records have been broken with these. If this is more than just a hobby for you, a true passion, you need to work with a Best Cube. Nothing in the world can compare to one of these.</p>
+              <button type="button" id="button">SELECT</button>
             </div>
-          </div>
-        </div>
-      </div>
-    </body>
-    
+          </section>
+          <footer>
+            <div class="footer-container">
+                <ul class="footer-list">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                  <p>Copyright 2016, Cube World</p>
+            </div>
+          </footer>
+    </div>
+  </body>
 </html>
